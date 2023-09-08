@@ -179,7 +179,6 @@ body {
 .tenis {
     display: none;
     position: absolute;
-    z-index: 1;
     animation-name: tenis;
     animation-fill-mode: forwards;
     animation-duration: 4s;
@@ -203,12 +202,13 @@ body {
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     border-width: .3vw;
-    border-style:outset ;
+    border-style: outset;
     position: absolute;
     background: linear-gradient(90deg, rgb(201, 157, 113), rgb(255, 163, 72), #c08d5b);
     opacity: 70%;
     margin-top: 12vw;
     margin-left: 12vw;
+    z-index: -1;
 }
 
 /* Estilização do texto principal */
@@ -232,6 +232,33 @@ body {
     text-align: end;
 }
 
+.destaque {
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    font-size: 2.5vw;
+    margin-top: 20vh;
+}
 
+.brand1 {
+    text-align: center;
+    margin-left: 47vw;
+    font-family: 'Prompt', sans-serif;
+    font-size: 2.5vw;
+    margin-top: 5vh;
+    display: inline-block;
+}
 
+.ponto {
+    text-align: center;
+    font-size: 12vw;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: -13vh;
+}
+
+.brandimg {
+    display: inline-block;
+    width: 3vw;
+    margin-left: 1vw;
+}
 /* Responsividade */
