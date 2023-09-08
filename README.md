@@ -1,5 +1,7 @@
-# Dropout
+# Dropout 👟
 
-Website para venda de tênis feito para fins de estudo.
+Website para venda de tênis feito para fins de estudo. 👨‍💻
 
-AVISO: Esse projeto está sendo desenvolvido unicamente para estudo e aperfeiçoamento de habilidades em HTML, CSS e JavaScript, não possuindo finalidade comercial/lucrativa alguma.
+AVISO: Esse projeto está sendo desenvolvido unicamente para estudo e aperfeiçoamento de habilidades em HTML, CSS e JavaScript, não possuindo finalidade comercial/lucrativa alguma. 🚫💸
+
+Você pode conferir o site na URL dropoutsite.netlify.app 🌐
