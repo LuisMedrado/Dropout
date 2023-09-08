@@ -1,0 +1,264 @@
+/* Import de fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700;900&display=swap');
+
+/* Animação dos tênis */
+
+@keyframes tenis {
+    0% {
+        opacity: 85%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 85%;
+    }
+}
+
+@keyframes bola {
+    0% {
+        box-shadow: inset 60px 15px #362503;
+    }
+    20% {
+        box-shadow: inset -60px 15px #362503;
+    }
+    40% {
+        box-shadow: inset -280px 155px #362503;
+    }
+    60% {
+        box-shadow: inset -60px 15px #362503;
+    }
+    80% {
+        box-shadow: inset 280px 155px #362503;
+    }
+    100% {
+        box-shadow: inset 60px 15px #362503;
+    }
+}
+
+/* Estilização padrão */
+/* Exclusão de margin e padding */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+/* Barra superior */
+
+.topbar {
+    background-color: #FA5;
+    height: 5vh;
+    width: 100vw;
+    transition: 0.4s ease-in-out;
+    position: fixed;
+    z-index: 1;
+}
+
+.topbar:hover {
+    height: 14vh;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45%;
+}
+
+#logo {
+    text-decoration: none;
+}
+
+.logotxt {
+    margin-left: 0;
+    color: rgba(0, 0, 0, 0.836);
+    font-family: 'Lobster', cursive;
+    font-size: 2vw;
+    margin-top: -0.5vh;
+    text-align: center;
+    padding-bottom: 3.3vh;
+    transition: 0.5s ease-in-out;
+}
+
+.logotxt:hover {
+    text-shadow: .7px -.9px rgba(0, 0, 0, 0.705);
+    font-size: 4.5vw;
+}
+
+/* Estilização da barra lateral */
+
+.sidebar {
+    height: 100vh;
+    width: 10vw;
+    position: fixed;
+    top: 0;
+    left: -20vh;
+    background-color: #FA5;
+    transition: left 0.3s;
+    padding-top: 5vh;
+    z-index: 2;
+}
+
+.sidebar a {
+    padding: 1vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Lobster', cursive;
+    color: rgba(0, 0, 0, 0.836);
+    display: block;
+    transition: ease-in-out 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+/* Estilo para o botão de abrir o menu */
+
+.openbtn {
+    position: fixed;
+    left: 1vw;
+    top: .5vh;
+    cursor: pointer;
+    background-color: #FA5;
+    color: rgba(0, 0, 0, 0.836);
+    border: none;
+    padding: 0.5vh 0.5vw;
+    font-size: 20px;
+    z-index: 2;
+}
+
+/* Estilo para fechar o botão do menu */
+
+.closebtn {
+    position: absolute;
+    top: 0.5vh;
+    right: 1vw;
+    cursor: pointer;
+    background: none;
+    color: rgba(0, 0, 0, 0.836);
+    border: none;
+    padding: 0.1vw 0.1vh;
+    font-size: 35px;
+    display: none;
+    z-index: 2;
+}
+
+/* Estilização do botão da aba do cliente */
+
+.cliente {
+    position: fixed;
+    left: 92vw;
+    top: .5vh;
+    cursor: pointer;
+    border: none;
+    z-index: 2;
+}
+
+.clienteimg {
+    width: 1.8vw;
+}
+
+/* Estilização do botão da aba do carrinho */
+
+.carrinho {
+    position: fixed;
+    left: 96vw;
+    top: .5vh;
+    cursor: pointer;
+    border: none;
+    z-index: 2;
+}
+
+.carrinhoimg {
+    width: 1.8vw;
+}
+
+/* Estilização dos sapatos */
+
+.tenis {
+    display: none;
+    position: absolute;
+    animation-name: tenis;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    rotate: 25deg;
+    width: 40vw;
+    margin-top: 10vh;
+    margin-left: 8vw;
+}
+
+ /* Estilização da bola */
+
+ .bola1 {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 100%;
+    border: #362503;
+    box-shadow: inset -60px 15px #362503;
+    animation-name: bola;
+    animation-duration: 9s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    border-width: .3vw;
+    border-style: outset;
+    position: absolute;
+    background: linear-gradient(90deg, rgb(201, 157, 113), rgb(255, 163, 72), #c08d5b);
+    opacity: 70%;
+    margin-top: 12vw;
+    margin-left: 12vw;
+    z-index: -1;
+}
+
+/* Estilização do texto principal */
+
+.fronttxt1 {
+    margin: 0;
+    margin-right: 3vw;
+    padding-top: 18vh;
+    padding-bottom: 0;
+    font-family: 'Prompt', sans-serif;
+    font-size: 6vw;
+    text-align: end;
+}
+
+.fronttxt2 {
+    margin: 0;
+    margin-right: 3vw;
+    margin-top: -25vh;
+    font-family: 'Prompt', sans-serif;
+    font-size: 6vw;
+    text-align: end;
+}
+
+.destaque {
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    font-size: 2.5vw;
+    margin-top: 20vh;
+}
+
+.brand1 {
+    text-align: center;
+    margin-left: 47vw;
+    font-family: 'Prompt', sans-serif;
+    font-size: 2.5vw;
+    margin-top: 5vh;
+    display: inline-block;
+}
+
+.ponto {
+    text-align: center;
+    font-size: 12vw;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: -13vh;
+}
+
+.brandimg {
+    display: inline-block;
+    width: 3vw;
+    margin-left: 1vw;
+}
+/* Responsividade */
