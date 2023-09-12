@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
 
 /* Animação dos tênis */
 
@@ -257,8 +258,86 @@ body {
 }
 
 .brandimg {
-    display: inline-block;
+    /* display: inline-block; */
     width: 3vw;
     margin-left: 1vw;
 }
+
+/* "Cards" dos produtos */
+
+.prod {
+    display: inline-block;
+    margin-right: 2.5vw;
+    margin-left: 4.5vw;
+    margin-top: 9vh;
+    margin-bottom: 18vh;
+    width: 25vw;
+    /* height: 60vh; */
+    background: linear-gradient(#e3e5e6,#cccccc, #dbdcdd, #e3e5e6);
+    border-radius: 5vw;
+    border: 0.35vh solid rgba(255, 170, 85, 0.637);
+}
+
+.prodtemplate {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 20vw;
+    margin-top: 5vh;
+    transition: 0.5s ease-in-out;
+}
+
+.prodtemplate:hover {
+    scale: 1.05;
+    transform: rotate(10deg);
+}
+
+.nometenis {
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+    margin-top: 4vh;
+    font-size: 2vh;
+    margin-bottom: 0;
+}
+
+.nomemodelo {
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+    margin-top: 4vh;
+    font-size: 3vh; 
+    margin-top: 0;
+}
+
+.preco {
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    font-size: 3.5vh;
+}
+
+.cart {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FA5;
+    width: 35vh;
+    border-radius: 5vw;
+    margin-bottom: 2vh;
+    border: 0.3vh solid #555;
+    margin-top: 5vh;
+    transition: 0.4s ease-in-out;
+}
+
+.cart:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.cartimg {
+    padding: .5vh;
+    width: 2vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Responsividade */
