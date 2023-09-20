@@ -344,6 +344,20 @@ p::selection {
     margin-right: auto;
 }
 
+.vmaistxt {
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    font-size: 4vh;
+    background-color: rgb(230, 230, 230);
+    cursor: pointer;
+}
+
+/* Showcases ocultas */
+
+.showcasey {
+    display: none;
+}
+
 /* Alterações pontuais */
 
 #dunkben {
@@ -358,4 +372,39 @@ p::selection {
     margin-left: 85vh
 }
 
+#yugi {
+    padding-top: 1.5vh;
+}
+
+#logonb {
+    margin-left: 40vw;
+}
+
+#nb1 {
+    padding-top: 4.5vh;
+}
+
+#nb2 {
+    padding-top: 5vh;
+}
+
+#logoconv {
+    margin-left: 43vw;
+}
+
+#conv2 {
+    padding-top: 1vh;
+}
+
+#conv3 {
+    padding-top: 7.5vh;
+}
+
+#saluzzo {
+    padding-top: 2vh;
+}
+
+#op {
+    padding-top: 2vh;
+}
 /* Responsividade */
